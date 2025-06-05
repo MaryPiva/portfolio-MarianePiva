@@ -125,21 +125,3 @@ h2 i, h3 i {
   margin-right: 8px;
   color: #2575fc;
 }
-#backToTop {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #2575fc;
-  color: rgb(228, 21, 21);
-  border: none;
-  border-radius: 50%;
-  padding: 12px;
-  cursor: pointer;
-  display: none;
-  font-size: 18px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-
-#backToTop:hover {
-  background-color: #1a5fd0;
-}
