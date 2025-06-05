@@ -1,23 +1,36 @@
 const sections = document.querySelectorAll("main section");
 const navLinks = document.querySelectorAll("nav a");
-const backToTop = document.getElementById("backToTop");
+const footer = document.querySelector("footer");
 
-window.addEventListener("scroll", () => {
-  let current = "";
+function showSection(id) {
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 120;
-    if (pageYOffset >= sectionTop) {
-      current = section.getAttribute("id");
+    section.style.display = "none";
+    if (section.id === id) {
+      section.style.display = "block";
+      section.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
-  backToTop.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+ 
+  if (id === "lets-work") {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+}
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const targetId = link.getAttribute("href").substring(1);
+    showSection(targetId);
+
+    navLinks.forEach((l) => l.classList.remove("active"));
+    link.classList.add("active");
+  });
 });
 
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-    if (link.getAttribute("href") === `#${current}`) {
-      link.classList.add("active");
-    }
-  });
-});
+
+sections.forEach((section) => (section.style.display = "none"));
+footer.style.display = "none";
+
