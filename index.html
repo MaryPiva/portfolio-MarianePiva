@@ -9,7 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <button id="backToTop" title="Back to top">↑</button>
+
 </head>
+
+
 <body>
 
     <header>
@@ -17,32 +21,33 @@
         <h1>Mariane Piva </h1>
         <p>Junior Software Engineer / Full-stack Developer</p>
         <p class="headline">Building clean, user-focused web applications with passion and precision.</p>
-        <a href="curriculo/Mariane_Piva_Updated_CV.pdf" class="cv-button" download="#">Download CV</a>
-
+        <a href="curriculo/Mariane_Piva_Updated_CV.pdf" class="cv-button" download><i class="fas fa-download"></i> Download CV</a>
     </header>
 
     <nav>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Skills</a>
-        <a href="#">Experience</a>
-        <a href="#">contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">contact</a>
+        <a href="#lets-work">Let's Work</a>
     </nav>
+
     <main>
-    <section id="about">
+    <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>Brazilian software engineer, based in London, passionate about solving real-world problems, through clean code...</p>
+       <p>I'm a Brazilian software engineer based in London, passionate about creating clean and functional web applications. With a strong foundation in full-stack development, I love turning ideas into real, user-friendly solutions. I'm constantly learning and growing as a developer, currently expanding my skills in Java and Flutter.</p>
     </section>
 
-    <section id="Projects">
-        <h2>Projects:</h2>
+     <section id="projects" class="fade-in">
+         <h2><i class="fas fa-laptop-code"></i> Projects</h2>
         <div class="project">
-            <h3>ProEventos</h3>
+           <h3><i class="fas fa-calendar-check"></i>ProEventos</h3>
            <p>Full-stack app with JWT authentication, filters, image uploads.</p>
            <p><strong>Tech:</strong> Angular, ASP.NET Core, Entity Framework</p>
         </div>
         <div class="project">
-            <h3>Financial Management System</h3>
+            <h3><i class="fas fa-coins"></i> Financial Management System</h3>
             <p> Enables users to manage income and expenses effectively</p>
             <p><strong>Tech:</strong>Built with MySQL, ASP.NET, and C#</p>
         </div>
@@ -52,9 +57,9 @@
             <p><strong>Tech:</strong>Built with HTML, CSS, and JavaScript.</p>
         </div>
         <div class="project">
-            <h3>Cupcake App </h3>
+            <h3><i class="fas fa-birthday-cake"></i> Cupcake App</h3>
             <p>Shopping app for cupcake orders</p>
-            <p><strong>Tech:</strong>eveloped using HTML5, CSS3, and JavaScript. Focused on UX/UI and DOM manipulation.</p>
+            <p><strong>Tech:</strong>Developed using HTML5, CSS3, and JavaScript. Focused on UX/UI and DOM manipulation.</p>
         </div>
         <div class="project">
             <h3> Tech Blog </h3>
@@ -62,8 +67,8 @@
         </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills:</h2>
+    <section id="skills" class="fade-in">
+        <h2><i class="fas fa-tools"></i> Skills</h2>
         <ul>
             <li>Languages: JavaScript, C#, C, Java (learning)</li>
             <li>Frontend: HTML5, CSS3, jQuery, Vue.js (learning)</li>
@@ -74,8 +79,8 @@
         </ul>
     </section>
 
-    <section id="experience">
-        <h2>Experience:</h2>
+     <section id="experience" class="fade-in">
+      <h2><i class="fas fa-briefcase"></i> Experience</h2>
           <p><strong>Amazon Fresh - Associate (2024–Present)</strong><br>Developed teamwork and time management in high-demand environments.</p>
           <p> <strong>Housekeeper, Style Hotel, London (2024)</strong><br> Maintained high cleanliness standards whilebalancing part-time work and engineering studies.</p>
          <p><strong>Delivery Driver, Uber/Stuart/Deliveroo, London (2020–2023)</strong><br> Honed customer service and problem-solving while navigating logistics.</p>
@@ -83,11 +88,15 @@
          <p><strong>Sales & Stock Assistant, Palacio das Tintas, Brazil (2010–2016)</strong><br> Managed inventory,handled sales, and improved cashier operations.</p>
     </section>
 
-    <section id="contact">
-        <h2>Contact: </h2>
+       <section id="contact" class="fade-in">
+           <h2><i class="fas fa-envelope"></i> Contact</h2>
         <p><strong>Email: </strong>marianepiva53@gmail.com</p>
         <p><strong>GitHub:</strong> <a href="https://github.com/MaryPiva" target="_blank">MaryPiva</a></p>
         <p><strong>Linkedin: </strong><a href="https://www.linkedin.com/in/mariane-generoso-piva-329a0118a/" target="_blank">Mariane Generoso Piva</a></p>
+    </section>
+     <section id="lets-work" class="fade-in">
+      <h2><i class="fas fa-handshake"></i> Let's Work Together</h2>
+      <p>Open to new opportunities and collaborations.</p>
     </section>
     </main>
     <footer> <p>&copy; 2025 Mariane Piva. All rights reserved.</p></footer>
