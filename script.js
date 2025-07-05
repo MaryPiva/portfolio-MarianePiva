@@ -11,7 +11,6 @@ function showSection(id) {
     }
   });
 
- 
   if (id === "lets-work") {
     footer.style.display = "block";
   } else {
@@ -27,10 +26,26 @@ navLinks.forEach((link) => {
 
     navLinks.forEach((l) => l.classList.remove("active"));
     link.classList.add("active");
+
+    // Fecha o menu no mobile após clicar
+    if (window.innerWidth <= 600) {
+      document.getElementById("menu").classList.remove("show");
+    }
   });
 });
 
-
+// Oculta todas as seções e o footer no carregamento
 sections.forEach((section) => (section.style.display = "none"));
 footer.style.display = "none";
 
+// Menu hambúrguer (mobile)
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const menu = document.getElementById("menu");
+
+  if (menuToggle && menu) {
+    menuToggle.addEventListener("click", function () {
+      menu.classList.toggle("show");
+    });
+  }
+});

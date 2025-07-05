@@ -77,6 +77,19 @@ nav a.active {
   font-weight: bold;
   border-bottom: 2px solid #2575fc;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.menu-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
 main{
     max-width: 900px;
     margin: auto;
@@ -115,12 +128,42 @@ footer{
     width: 90px;
     height: 90px;
   }
+  nav{
+    text-align: center ;
+    padding: 1rem;
+  }
  
   nav a {
     display: block;
     margin: 0.5rem 0;
+    font-size: 14px;
+    padding: 6px 0;
+  }
+   .menu-toggle {
+    display: block;
   }
 
+  .menu-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    z-index: 999;
+  }
+
+  .menu-links.show {
+    display: flex;
+  }
+
+  .menu-links a {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
   .cv-button {
     margin-top: 1rem;
   }
